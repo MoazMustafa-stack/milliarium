@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "maintenance.html",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": ""
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/maintenance.html"
+    }
+  ]
+}
